@@ -111,6 +111,12 @@
                         </table>
                     </div>
                     
+                    @if ($blogs->hasPages())
+                        <div class="mt-4">
+                            {{ $blogs->links() }}
+                        </div>
+                    @endif
+                    
                 </div>
             </div>
         </div>
