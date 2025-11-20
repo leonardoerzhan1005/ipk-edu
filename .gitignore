@@ -1,0 +1,106 @@
+# --- Laravel / PHP ---
+/vendor/
+composer.phar
+
+# Секреты окружения
+
+
+# Кэш, логи, временные файлы
+
+
+# --- Frontend ---
+/node_modules/
+
+
+# Для старых проектов на Laravel Mix:
+# /public/mix-manifest.json
+
+# Логи пакетных менеджеров
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- IDE / OS ---
+/.idea/
+/.vscode/
+/.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# --- Инструменты и окружения (опционально) ---
+Homestead.yaml
+Homestead.json
+/.vagrant
+/.phpunit.cache
+.phpunit.result.cache
+.phpunit.cache
+.php-cs-fixer.cache
+
+# Docker (если нужно игнорировать локальные оверрайды)
+# docker-compose.override.yml
+# /docker/*.env
+
+
+# --- Laravel / PHP ---
+/vendor/
+composer.phar
+
+# Secrets
+.env
+.env.*
+
+# Cache / logs / temp
+/storage/*.key
+/storage/app/public
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+# --- Frontend ---
+/node_modules/
+/public/hot
+/public/storage
+/public/build            # Vite
+# /public/mix-manifest.json  # если старый Mix-проект
+
+# Logs менеджеров пакетов
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- IDE / OS ---
+/.idea/
+/.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# --- PHPUnit / инструменты ---
+/.phpunit.cache
+.phpunit.result.cache
+.phpunit.cache
+.php-cs-fixer.cache
+/.vagrant
+Homestead.yaml
+Homestead.json
+
+# --- Локальные дампы БД в корне ---
+/database.sql
+/database_new.sql
+./idea
+./node_modules
+./storage

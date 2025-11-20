@@ -1,0 +1,90 @@
+{
+  "_jquery-T8mbjkVg.js": {
+    "file": "assets/jquery-T8mbjkVg.js",
+    "name": "jquery"
+  },
+  "resources/css/admin.css": {
+    "file": "assets/admin-ycl2kek-.css",
+    "src": "resources/css/admin.css",
+    "isEntry": true
+  },
+  "resources/css/admin/tinymce-enhanced.css": {
+    "file": "assets/tinymce-enhanced-DlfbYYqA.css",
+    "src": "resources/css/admin/tinymce-enhanced.css",
+    "isEntry": true
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-bAvpBHUf.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/frontend.css": {
+    "file": "assets/frontend-I1QPkGhs.css",
+    "src": "resources/css/frontend.css",
+    "isEntry": true
+  },
+  "resources/js/admin/admin.js": {
+    "file": "assets/admin-BrivNcH7.js",
+    "name": "admin",
+    "src": "resources/js/admin/admin.js",
+    "isEntry": true,
+    "imports": [
+      "_jquery-T8mbjkVg.js",
+      "resources/js/admin/image-handler.js"
+    ]
+  },
+  "resources/js/admin/course.js": {
+    "file": "assets/course-CDcgUzRc.js",
+    "name": "course",
+    "src": "resources/js/admin/course.js",
+    "isEntry": true,
+    "imports": [
+      "_jquery-T8mbjkVg.js"
+    ]
+  },
+  "resources/js/admin/image-handler.js": {
+    "file": "assets/image-handler-CYgE8k4a.js",
+    "name": "image-handler",
+    "src": "resources/js/admin/image-handler.js",
+    "isEntry": true
+  },
+  "resources/js/admin/login.js": {
+    "file": "assets/login-BVyPtBik.js",
+    "name": "login",
+    "src": "resources/js/admin/login.js",
+    "isEntry": true,
+    "imports": [
+      "_jquery-T8mbjkVg.js"
+    ]
+  },
+  "resources/js/admin/tinymce-enhanced.js": {
+    "file": "assets/tinymce-enhanced-B-BXmrd3.js",
+    "name": "tinymce-enhanced",
+    "src": "resources/js/admin/tinymce-enhanced.js",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DlYOw6CL.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/frontend/course.js": {
+    "file": "assets/course-Cm13yVQK.js",
+    "name": "course",
+    "src": "resources/js/frontend/course.js",
+    "isEntry": true
+  },
+  "resources/js/frontend/frontend.js": {
+    "file": "assets/frontend-WRAkzJ-S.js",
+    "name": "frontend",
+    "src": "resources/js/frontend/frontend.js",
+    "isEntry": true
+  },
+  "resources/js/frontend/player.js": {
+    "file": "assets/player-BI9wx-vX.js",
+    "name": "player",
+    "src": "resources/js/frontend/player.js",
+    "isEntry": true
+  }
+}
