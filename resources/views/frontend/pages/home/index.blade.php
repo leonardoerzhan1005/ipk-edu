@@ -89,7 +89,7 @@
     <!--===========================
         QUALITY COURSES START
     ============================-->
-    @include('frontend.pages.home.sections.quality-course-section')  
+    {{--  @include('frontend.pages.home.sections.quality-course-section')  --}}
     <!--===========================
         QUALITY COURSES END
     ============================-->

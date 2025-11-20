@@ -44,7 +44,7 @@ class FrontendController extends Controller
       $featuredInstructor = FeaturedInstructor::first();
       $featuredInstructorCourses = Course::whereIn('id', json_decode($featuredInstructor?->featured_courses ?? '[]'))->get();
       $testimonials = Testimonial::with('translations')->get();
-      $blogs = Blog::where('status', 1)->latest()->limit(3)->get();
+      $blogs = Blog::with('translations')->where('status', 1)->latest()->limit(3)->get();
       $services = Service::with('translations')->where('status', true)->orderBy('display_order')->limit(8)->get();
      
     return view('frontend.pages.home.index', compact(
@@ -72,7 +72,7 @@ class FrontendController extends Controller
       $about = AboutUsSection::first();
       $counter = Counter::first();
       $testimonials = Testimonial::with('translations')->get();
-      $blogs = Blog::where('status', 1)->latest()->limit(8)->get();
+      $blogs = Blog::with('translations')->where('status', 1)->latest()->limit(8)->get();
 
       return view('frontend.pages.about', compact('about', 'counter', 'testimonials', 'blogs'));
    }

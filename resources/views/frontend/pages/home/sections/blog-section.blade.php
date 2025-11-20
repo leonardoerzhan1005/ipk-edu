@@ -11,6 +11,7 @@
     </div>
     <div class="row blog_4_slider">
         @forelse($blogs as $blog)
+            @if($blog->translated_slug)
             <div class="col-xl-4 col-md-6 wow fadeInUp" style="margin-bottom: 30px !important; padding: 0 15px !important;">
                 <div class="wsus__single_blog_vertical" style="display: flex !important; flex-direction: column !important; height: 100% !important; background: #fff !important; border-radius: 10px !important; overflow: hidden !important; box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;">
                     <a href="{{ route('blog.show',['locale' => request()->route('locale'), 'slug' => $blog->translated_slug]) }}" style="position: relative !important; width: 100% !important; height: 280px !important; display: block !important; background-color: #f5f5f5 !important; overflow: hidden !important;">
@@ -48,6 +49,7 @@
                     </div>
                 </div>
             </div>
+            @endif
         @empty
             <div>{{__('No Blog Found')}}</div>
         @endforelse
