@@ -78,6 +78,17 @@ Homestead.json
 /database.sql
 /database_*.sql
 
+# Архивы
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
 # Uploads
 /public/uploads/
+
+
+
+
+
 
