@@ -1,58 +1,18 @@
-# --- Laravel / PHP ---
+# --------------------------------------
+# Laravel / PHP
+# --------------------------------------
+
 /vendor/
 composer.phar
-
-# Секреты окружения
-
-
-# Кэш, логи, временные файлы
-
-
-# --- Frontend ---
-/node_modules/
-
-
-# Для старых проектов на Laravel Mix:
-# /public/mix-manifest.json
-
-# Логи пакетных менеджеров
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# --- IDE / OS ---
-/.idea/
-/.vscode/
-/.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-.DS_Store
-Thumbs.db
-
-# --- Инструменты и окружения (опционально) ---
-Homestead.yaml
-Homestead.json
-/.vagrant
-/.phpunit.cache
 .phpunit.result.cache
-.phpunit.cache
 .php-cs-fixer.cache
 
-# Docker (если нужно игнорировать локальные оверрайды)
-# docker-compose.override.yml
-# /docker/*.env
-
-
-# --- Laravel / PHP ---
-/vendor/
-composer.phar
-
-# Secrets
+# Environment
 .env
 .env.*
+!.env.example
 
-# Cache / logs / temp
+# Cache / Logs / Storage except gitignore placeholders
 /storage/*.key
 /storage/app/public
 /storage/framework/cache/*
@@ -68,22 +28,30 @@ composer.phar
 /bootstrap/cache/*
 !/bootstrap/cache/.gitignore
 
-# --- Frontend ---
+
+# --------------------------------------
+# Frontend / Node / Build
+# --------------------------------------
+
 /node_modules/
 /public/hot
 /public/storage
-/public/build            # Vite git rm -r --cached public/certificates/
+/public/build
 /public/vendor/
-/public/
-# /public/mix-manifest.json  # если старый Mix-проект
 
-# Logs менеджеров пакетов
+# Если есть Mix — раскомментируй
+# /public/mix-manifest.json
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# --- IDE / OS ---
+
+# --------------------------------------
+# IDE / OS
+# --------------------------------------
+
 /.idea/
 /.vscode/*
 !.vscode/extensions.json
@@ -91,34 +59,25 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
-# --- PHPUnit / инструменты ---
-/.phpunit.cache
-.phpunit.result.cache
-.phpunit.cache
-.php-cs-fixer.cache
+
+# --------------------------------------
+# Virtual Machines / Docker
+# --------------------------------------
+
 /.vagrant
 Homestead.yaml
 Homestead.json
+# docker-compose.override.yml
+# /docker/*.env
 
-# --- Локальные дампы БД в корне ---
+
+# --------------------------------------
+# Дополнительные файлы
+# --------------------------------------
+
 /database.sql
-/database_new.sql
-./idea
-./node_modules
-./storage# Uploads
+/database_*.sql
+
+# Uploads
 /public/uploads/
-
-# Vendor
-/vendor/
-
-# Node modules
-/node_modules/
-
-# Storage logs
-/storage/logs/*.log
-/storage/*.key
-
-# Environment
-.env
-.env.backup
 
