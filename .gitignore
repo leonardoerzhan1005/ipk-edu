@@ -72,7 +72,9 @@ composer.phar
 /node_modules/
 /public/hot
 /public/storage
-/public/build            # Vite
+/public/build            # Vite git rm -r --cached public/certificates/
+/public/vendor/
+/public/
 # /public/mix-manifest.json  # если старый Mix-проект
 
 # Logs менеджеров пакетов
@@ -103,4 +105,20 @@ Homestead.json
 /database_new.sql
 ./idea
 ./node_modules
-./storage
+./storage# Uploads
+/public/uploads/
+
+# Vendor
+/vendor/
+
+# Node modules
+/node_modules/
+
+# Storage logs
+/storage/logs/*.log
+/storage/*.key
+
+# Environment
+.env
+.env.backup
+
