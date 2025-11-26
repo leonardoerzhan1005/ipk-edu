@@ -60,6 +60,13 @@
 
     <style>
 
+@scroll-timeline slide-horizontal {
+    source: body;          /* <- ВАЖНО: источник — вся страница */
+    orientation: block;    /* вертикальная прокрутка */
+}
+
+
+
         .intro-logos-item-1,
 .intro-logos-item-2{
   display: flex;
@@ -167,12 +174,8 @@
 
 
 @scroll-timeline slide-horizontal {
-    source: auto;
-    orientation: block;
-}
-@scroll-timeline slide-horizontal {
-    source: auto;
-    orientation: block;
+    source: body;          /* <- ВАЖНО: источник — вся страница */
+    orientation: block;    /* вертикальная прокрутка */
 }
 
 
@@ -191,11 +194,16 @@
     /* opacity: 0; */
     /* transform: translateY(40px); */
     /* animation: reveal 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
-    transition: transform 0.4s ease;
+    animation-name: slideX;
+    animation-duration: 1s;      /* обязательная заглушка */
+    animation-timeline: slide-horizontal;
+    animation-fill-mode: both;
 }
 
-.programs-v2:hover {
-    transform: translateX(-40px);
+@keyframes slideX {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-40px); }
+    100% { transform: translateX(0); }
 }
  
 
