@@ -186,7 +186,7 @@
     /* transform: translateY(40px); */
     /* animation: reveal 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
     overflow: hidden;
-    transition: transform 0.9s ease-out; 
+    transition: transform 0.5s ease-out; 
 }
 
  
@@ -1564,7 +1564,7 @@ window.addEventListener('scroll', () => {
   const threshold = 100;
   if (Math.abs(elementMiddle - viewportMiddle) < threshold) {
     const factor = (elementMiddle - viewportMiddle) / threshold;
-    const offset = -factor * maxOffset; // движение влево/вправо
+    const offset = -factor * maxOffset * 5; // движение влево/вправо
     programs.style.transform = `translateX(${offset}px)`;
   } else {
     programs.style.transform = `translateX(0)`; // возвращаем в центр
