@@ -186,7 +186,7 @@
     /* transform: translateY(40px); */
     /* animation: reveal 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
     overflow: hidden;
-    transition: transform 0.2s ease-out; 
+    transition: transform 0.9s ease-out; 
 }
 
  
@@ -1553,7 +1553,7 @@ body {
 </script>
 <script>
 const programs = document.querySelector('.programs-v2');
-const maxOffset = 500; // пиксели смещения
+const maxOffset = 50; // пиксели смещения
 
 window.addEventListener('scroll', () => {
   const rect = programs.getBoundingClientRect();
