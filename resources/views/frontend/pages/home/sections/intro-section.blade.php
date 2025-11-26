@@ -426,15 +426,26 @@
         <p class="brands__description">
             {{ __('OUR PARTICIPANTS AND PARTNERS The Institute for Advanced Training and Continuing Education of Al-Farabi KazNU collaborates with over 50 universities, colleges, schools, and organizations across Kazakhstan and abroad. Our programs attract participants from all regions of the country, as well as from international partner universities. Among our participants are ALMA University, Satbayev University, Toraighyrov University, Atyrau University, Dulaty University, Astana International University, and representatives from universities in Uzbekistan, Turkey, and Europe. Major companies and organizations such as RG Brands, KazTransOil, and Zolotoe Yabloko also take part in our training programs. The Institute maintains active partnerships with international institutions, enabling the exchange of experience, collaborative projects, and joint educational initiatives. Our growing network of listeners and partners reflects the Institute’s commitment to quality education, innovation, and global cooperation.') }}
 </p>
+
+        <div class="brands__container">
+        <div class="brands__content">
+            <h3 class="brands__title">Listeners from Kazakhstan University</h3>
         <div class="brands__list">
             <div class="brands__item">
                 <img class="brands__item-img" src="{{ asset('frontend/assets/images/logo-1.png') }}" alt="BUSINESS GRADUATES ASSOCIATION">
             </div>
+           
+           
+        </div>
+        </div>
+        <div class="brands__content">
+            <h3 class="brands__title">Listeners from Kazakhstan University</h3>
             <div class="brands__item">
                 <img class="brands__item-img" src="{{ asset('frontend/assets/images/logo-2.png') }}" alt="Coursera">
             </div>
-           
+            </div>
         </div>
+
     </section>
 
 
