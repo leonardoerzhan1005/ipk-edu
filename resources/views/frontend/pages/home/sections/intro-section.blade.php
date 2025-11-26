@@ -578,7 +578,8 @@
 
 <div class="programs-v2">
     @if(app()->getLocale() === 'kk')
-        <h1 class="programs-v2__grid">БАҒДАРЛАМАЛАР МЕН БАҒА ТУРАЛЫ АҚПАРАТ</h1>
+    <div class="programs-v2__grid">
+        <h1 class="programs-v2__title">БАҒДАРЛАМАЛАР МЕН БАҒА ТУРАЛЫ АҚПАРАТ</h1>
         <p class="programs-v2__card">
             <h3 class="programs-v2__card-title">Әл-Фараби атындағы ҚазҰУ-дың Біліктілікті арттыру және қосымша білім беру институты<br></h3>
             <h3 class="programs-v2__card-title">барлық деңгейдегі білім беру мекемелеріне арналған икемді және қолжетімді бағдарламалар ұсынады.</h3>
@@ -588,8 +589,10 @@
             Бұл бағаларға тәжірибелі профессорлардан сабақ алу, онлайн және офлайн форматтағы икемді оқу жүйесі, сонымен қатар мемлекеттік үлгідегі сертификат кіреді.
             Білімге салынған инвестиция – болашаққа салынған ең сенімді капитал!
         </p>
+    </div>
     @elseif(app()->getLocale() === 'ru')
-        <h1 class="programs-v2__grid">ИНФОРМАЦИЯ О ПРОГРАММАХ И СТОИМОСТИ</h1>
+    <div class="programs-v2__grid">
+        <h1 class="programs-v2__title">ИНФОРМАЦИЯ О ПРОГРАММАХ И СТОИМОСТИ</h1>
         <p class="programs-v2__card">
             Институт повышения квалификации и переподготовки кадров<br>
             КазНУ имени аль-Фараби предлагает гибкие программы для всех уровней образования.
@@ -599,8 +602,10 @@
             В стоимость входит обучение у опытных преподавателей КазНУ, удобные онлайн и офлайн форматы, а также сертификат государственного образца.
             Инвестиции в образование — это инвестиции в уверенное будущее!
         </p>
+    </div>
     @else
-        <h1 class="programs-v2__grid">PROGRAMS & TUITION FEES</h1>
+    <div class="programs-v2__grid">
+        <h1 class="programs-v2__title">PROGRAMS & TUITION FEES</h1>
         <p class="programs-v2__card">
         <h3 class="programs-v2__card-title">The Institute for Professional Development and Continuing Education<br> </h3>
         <h3 class="programs-v2__card-title">at Al-Farabi Kazakh National University offers flexible programs for all educational levels.</h3>
@@ -610,6 +615,7 @@
             The cost includes instruction from qualified KazNU professors, flexible online/offline formats, and an official state-recognized certificate upon completion.
             Education is the best investment in your future!
         </p>
+    </div>
     @endif
 
     <div class="programs-v2__grid">
