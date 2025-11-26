@@ -188,8 +188,11 @@
     /* opacity: 0; */
     /* transform: translateY(40px); */
     /* animation: reveal 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
-    animation: slideX 1 linear both;
+    animation-name: slideX;
+    animation-duration: auto;
+    animation-timing-function: linear;
     animation-timeline: slide-horizontal;
+    animation-fill-mode: both;
 }
 
 
