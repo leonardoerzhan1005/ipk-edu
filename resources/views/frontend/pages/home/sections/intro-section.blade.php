@@ -175,7 +175,7 @@
     border-radius: 32px;
     box-shadow: 0 40px 80px -16px rgba(15, 23, 42, 0.09);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
     overflow: hidden;
     opacity: 0;
@@ -199,7 +199,7 @@
     font-weight: 850;
     letter-spacing: -1.6px;
     color: #0f172a;
-    margin: 0 0 48px 0;
+    margin: 0 0 20px 0;
     line-height: 1.1;
 }
 
@@ -207,8 +207,9 @@
     font-size: 20px;
     line-height: 1.75;
     color: #475569;
-    margin: 0 0 56px 0;
+    /* margin: 0 0 56px 0; */
     font-weight: 400;
+    text-align: left;
 }
 
 .programs-v2__price {
@@ -223,7 +224,7 @@
 .programs-v2__price strong {
     font-size: 42px;
     font-weight: 800;
-    color: #0f172a;
+    color: #1E3A8A;
     letter-spacing: -1px;
 }
 
