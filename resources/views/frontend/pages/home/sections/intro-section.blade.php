@@ -1553,7 +1553,7 @@ body {
 </script>
 <script>
 const programs = document.querySelector('.programs-v2');
-const maxOffset = 50; // пиксели смещения
+const maxOffset = 50000; // пиксели смещения
 
 window.addEventListener('scroll', () => {
   const rect = programs.getBoundingClientRect();
@@ -1564,7 +1564,7 @@ window.addEventListener('scroll', () => {
   const threshold = 100;
   if (Math.abs(elementMiddle - viewportMiddle) < threshold) {
     const factor = (elementMiddle - viewportMiddle) / threshold;
-    const offset = -factor * maxOffset * 10; // движение влево/вправо
+    const offset = -factor * maxOffset * 0.5; // движение влево/вправо
     programs.style.transform = `translateX(${offset}px)`;
   } else {
     programs.style.transform = `translateX(0)`; // возвращаем в центр
