@@ -783,30 +783,29 @@ body {
 }
 
 .brands__item {
-    background: transparent;
+    
     padding: 0;
     box-shadow: none;
     border: none;
     display: inline-block;
-    transition: all 0.4s ease;
+   
 }
 
 .brands__item:hover {
-    opacity: 1;
-    transform: translateY(-10px);
+    
+    
 }
 
 .brands__item-img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-    transition: all 0.4s ease;
+    
+   
 }
 
 .brands__item:hover .brands__item-img {
-    box-shadow: 0 30px 70px rgba(0,0,0,0.18);
-    transform: translateY(-6px);
+  
 }
 
 /* Мобильные устройства */
