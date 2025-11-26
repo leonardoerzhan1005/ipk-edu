@@ -738,17 +738,10 @@ body {
 
 
 
-
-
-
-
-
-
-/* Brands Section */
 .brands {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 100px 60px;
+    padding: 120px 60px;
     background-color: #ffffff;
 }
 
@@ -757,52 +750,85 @@ body {
     color: #1a1a1a;
     line-height: 1.9;
     margin-bottom: 80px;
-    text-align: left;
+    text-align: center;            /* было left → стало center */
     max-width: 100%;
     font-weight: 400;
 }
 
+.brands__container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;               /* на мобильных будет под друг другом */
+}
+
+.brands__content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.brands__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Убираем старую сетку и делаем один большой логотип в блоке */
 .brands__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px 80px;
-    margin-top: 0;
+    display: block;                /* больше не grid */
+    text-align: center;
 }
 
 .brands__item {
     background: transparent;
-    border-radius: 0;
     padding: 0;
     box-shadow: none;
-    transition: opacity 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: auto;
     border: none;
+    display: inline-block;
+    transition: all 0.4s ease;
 }
 
 .brands__item:hover {
-    transform: none;
-    box-shadow: none;
-    border-color: transparent;
-    opacity: 0.8;
+    opacity: 1;
+    transform: translateY(-10px);
 }
 
 .brands__item-img {
     max-width: 100%;
-    max-height: 100px;
-    width: auto;
     height: auto;
-    object-fit: contain;
-    filter: none;
-    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+    transition: all 0.4s ease;
 }
 
 .brands__item:hover .brands__item-img {
-    filter: none;
-    opacity: 0.8;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.18);
+    transform: translateY(-6px);
 }
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .brands {
+        padding: 80px 20px;
+    }
+    .brands__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .brands__title {
+        font-size: 28px;
+    }
+    .brands__title:nth-child(2) {
+        display: none; /* скрываем пустой заголовок на мобилке */
+    }
+}
+
+
+
 
 /* Form Section */
 .form {
