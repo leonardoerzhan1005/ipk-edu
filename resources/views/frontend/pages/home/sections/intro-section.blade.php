@@ -165,156 +165,152 @@
   .intro-logos { gap: 16px; }
 }
 
-.programs {
-    max-width: 680px;
-    margin: 80px auto;
-    padding: 56px 48px;
+.programs-v2 {
+    max-width: 840px;
+    margin: 100px auto;
+    padding: 80px 60px;
     background: #ffffff;
-    border: 1.5px solid #e5e7eb;
-    border-radius: 20px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.04), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    line-height: 1.6;
-    color: #1f2937;
+    border: 1.2px solid #e5e7eb;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    text-align: center;
     opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.9s ease-out forwards;
+    transform: translateY(40px);
+    animation: reveal 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-.programs__title {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0 0 24px 0;
-    color: #111827;
-    letter-spacing: -0.5px;
-    position: relative;
-    padding-bottom: 16px;
+.programs-v2__title {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    color: #111111;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
 }
 
-.programs__title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 60px;
-    height: 4px;
-    background: #111827;
-    border-radius: 2px;
-    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+.programs-v2__text {
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.7;
+    margin: 0 0 64px 0;
+    font-weight: 400;
 }
 
-.programs:hover .programs__title::after {
-    width: 120px;
-}
-
-.programs__text {
-    font-size: 17px;
-    margin: 0 0 32px 0;
-    color: #4b5563;
-}
-
-.programs__list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 40px 0;
-}
-
-.programs__item {
-    font-size: 20px;
-    padding: 18px 0;
-    border-bottom: 1px solid #f3f4f6;
+.programs-v2__grid {
     display: flex;
-    align-items: center;
-    gap: 16px;
-    transition: all 0.35s ease;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.programs-v2__card {
+    flex: 1;
+    max-width: 340px;
+    padding: 48px 32px;
+    background: #fafafa;
+    border: 1.2px solid #e5e7eb;
+    border-radius: 20px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
 }
 
-.programs__item::before {
+.programs-v2__card::before {
     content: '';
     position: absolute;
-    left: 0;
-    top: 50%;
-    width: 4px;
-    height: 0;
-    background: #111827;
-    transition: height 0.4s ease;
-    transform: translateY(-50%);
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: #111111;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s ease;
 }
 
-.programs__item:hover {
-    padding-left: 12px;
-    color: #111827;
+.programs-v2__card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.15);
+    border-color: #111111;
 }
 
-.programs__item:hover::before {
-    height: 100%;
+.programs-v2__card:hover::before {
+    transform: scaleX(1);
 }
 
-.programs__item strong {
-    color: #111827;
+.programs-v2__icon {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.programs-v2__card-title {
+    font-size: 21px;
     font-weight: 600;
-    font-size: 24px;
-    margin-left: auto;
-    transition: transform 0.3s ease;
+    color: #1f1f1f;
+    margin: 0 0 32px 0;
+    line-height: 1.5;
 }
 
-.programs__item:hover strong {
-    transform: translateX(4px);
+.programs-v2__card-title span {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #71717a;
+    margin-top: 8px;
 }
 
-.programs__footer {
-    margin: 0;
-    font-size: 18px;
+.programs-v2__price {
+    font-size: 42px;
+    font-weight: 800;
+    color: #111111;
+    letter-spacing: -1px;
+}
+
+.programs-v2__price-en {
+    font-size: 14px;
+    color: #71717a;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.programs-v2__footer {
+    font-size: 20px;
     font-weight: 500;
     color: #374151;
     font-style: italic;
+    margin: 0;
     opacity: 0;
-    animation: fadeIn 1.2s ease-out 0.6s forwards;
+    animation: fadeIn 1.2s ease-out 0.8s forwards;
 }
 
-/* Анимации появления */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Анимация появления */
+@keyframes reveal {
+    to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+    to { opacity: 1; }
 }
 
-/* Адаптив */
-@media (max-width: 640px) {
-    .programs {
-        margin: 40px 20px;
-        padding: 40px 24px;
-        border-radius: 16px;
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .programs-v2 {
+        margin: 60px 20px;
+        padding: 60px 30px;
+        border-radius: 20px;
     }
-    
-    .programs__title {
-        font-size: 24px;
-    }
-    
-    .programs__item {
-        font-size: 18px;
+    .programs-v2__grid {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
+        gap: 32px;
     }
-    
-    .programs__item strong {
-        margin-left: 0;
+    .programs-v2__title {
+        font-size: 30px;
     }
 }
-
 
 </style>
-    <div class="container text-center">
+
+
+
+<div class="container text-center">
         <div class="d-flex justify-content-center align-items-center gap-5 mb-4 wow fadeInUp intro-logos">
 
 
@@ -571,6 +567,52 @@
 
 </div>
 
+
+
+
+<div class="programs-v2">
+    @if(app()->getLocale() === 'kk')
+        <h1 class="programs-v2__title">БАҒДАРЛАМАЛАР МЕН БАҒА ТУРАЛЫ АҚПАРАТ</h1>
+        <p class="programs-v2__text">
+            Әл-Фараби атындағы ҚазҰУ-дың Біліктілікті арттыру және қосымша білім беру институты<br>
+            барлық деңгейдегі білім беру мекемелеріне арналған икемді және қолжетімді бағдарламалар ұсынады.
+        </p>
+    @elseif(app()->getLocale() === 'ru')
+        <h1 class="programs-v2__title">ИНФОРМАЦИЯ О ПРОГРАММАХ И СТОИМОСТИ</h1>
+        <p class="programs-v2__text">
+            Институт повышения квалификации и переподготовки кадров<br>
+            КазНУ имени аль-Фараби предлагает гибкие программы для всех уровней образования.
+        </p>
+    @else
+        <h1 class="programs-v2__title">PROGRAMS & TUITION FEES</h1>
+        <p class="programs-v2__text">
+            The Institute for Professional Development and Continuing Education<br>
+            at Al-Farabi Kazakh National University offers flexible programs for all educational levels.
+        </p>
+    @endif
+
+    <div class="programs-v2__grid">
+        <div class="programs-v2__card">
+            <div class="programs-v2__icon">Book</div>
+            <h3 class="programs-v2__card-title">Мектеп және колледж қызметкерлері<br><span>Для школ и колледжей</span><span>Schools & Colleges</span></h3>
+            <div class="programs-v2__price">25 000 ₸</div>
+            <div class="programs-v2__price-en">≈ $52 USD</div>
+        </div>
+
+        <div class="programs-v2__card">
+            <div class="programs-v2__icon">GraduationCap</div>
+            <h3 class="programs-v2__card-title">ЖОО оқытушылары<br><span>Преподаватели вузов</span><span>University Faculty</span></h3>
+            <div class="programs-v2__price">72 000 ₸</div>
+            <div class="programs-v2__price-en">≈ $150 USD</div>
+        </div>
+    </div>
+
+    <p class="programs-v2__footer">
+        @if(app()->getLocale() === 'kk') Білімге салынған инвестиция – болашаққа салынған капитал.
+        @elseif(app()->getLocale() === 'ru') Инвестиции в знания — самые надёжные инвестиции.
+        @else Investing in education is investing in the future. @endif
+    </p>
+</div>
 
 
 
