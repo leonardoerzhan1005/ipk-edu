@@ -60,10 +60,6 @@
 
     <style>
 
-@scroll-timeline slide-horizontal {
-    source: body;          /* <- ВАЖНО: источник — вся страница */
-    orientation: block;    /* вертикальная прокрутка */
-}
 
 
 
@@ -172,12 +168,7 @@
   .intro-logos { gap: 16px; }
 }
 
-
-@scroll-timeline slide-horizontal {
-    source: body;          /* <- ВАЖНО: источник — вся страница */
-    orientation: block;    /* вертикальная прокрутка */
-}
-
+ 
 
 .programs-v2 {
     max-width: 920px;
@@ -194,17 +185,10 @@
     /* opacity: 0; */
     /* transform: translateY(40px); */
     /* animation: reveal 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
-    animation-name: slideX;
-    animation-duration: 1s;      /* обязательная заглушка */
-    animation-timeline: slide-horizontal;
-    animation-fill-mode: both;
+    overflow: hidden;
+    transition: transform 0.2s ease-out; 
 }
 
-@keyframes slideX {
-    0%   { transform: translateX(0); }
-    50%  { transform: translateX(-40px); }
-    100% { transform: translateX(0); }
-}
  
 
 .programs-v2::before {
@@ -1566,4 +1550,24 @@ body {
             });
         });
     });
+</script>
+<script>
+const programs = document.querySelector('.programs-v2');
+const maxOffset = 50; // пиксели смещения
+
+window.addEventListener('scroll', () => {
+  const rect = programs.getBoundingClientRect();
+  const elementMiddle = rect.top + rect.height / 2;
+  const viewportMiddle = window.innerHeight / 2;
+
+  // Зона активации ±100px
+  const threshold = 100;
+  if (Math.abs(elementMiddle - viewportMiddle) < threshold) {
+    const factor = (elementMiddle - viewportMiddle) / threshold;
+    const offset = -factor * maxOffset; // движение влево/вправо
+    programs.style.transform = `translateX(${offset}px)`;
+  } else {
+    programs.style.transform = `translateX(0)`; // возвращаем в центр
+  }
+});
 </script>
