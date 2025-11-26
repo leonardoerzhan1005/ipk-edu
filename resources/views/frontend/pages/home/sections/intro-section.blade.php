@@ -760,6 +760,9 @@ body {
     justify-content: center;
     gap: 60px;
     flex-wrap: wrap;               /* на мобильных будет под друг другом */
+    border: 1.8px solid #e2e8f0;
+    border-radius: 32px;
+    box-shadow: 0 40px 80px -16px rgba(15, 23, 42, 0.09);
 }
 
 .brands__content {
@@ -773,6 +776,7 @@ body {
     font-weight: 700;
     color: #1a1a1a;
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
