@@ -385,6 +385,77 @@
     </section>
 
 
+
+
+
+<div class="programs">
+
+{{-- 🇰🇿 ҚАЗАҚША --}}
+@if(app()->getLocale() === 'kk')
+    <h1 class="programs__title">БАҒДАРЛАМАЛАР МЕН БАҒА ТУРАЛЫ АҚПАРАТ</h1>
+
+    <p class="programs__text">
+        Әл-Фараби атындағы ҚазҰУ-дың Біліктілікті арттыру және қосымша білім беру институты
+        барлық деңгейдегі білім беру мекемелеріне арналған икемді және қолжетімді бағдарламалар ұсынады.
+    </p>
+
+    <ul class="programs__list">
+        <li class="programs__item">
+            📘 Мектеп пен колледж қызметкерлеріне арналған курстар — <strong>25 000 ₸</strong>
+        </li>
+        <li class="programs__item">
+            🎓 ЖОО оқытушыларына — <strong>72 000 ₸</strong>
+        </li>
+    </ul>
+
+    <p class="programs__footer">Білімге салынған инвестиция – болашаққа салынған капитал!</p>
+
+{{-- 🇷🇺 РУССКИЙ --}}
+@elseif(app()->getLocale() === 'ru')
+    <h1 class="programs__title">ИНФОРМАЦИЯ О ПРОГРАММАХ И СТОИМОСТИ</h1>
+
+    <p class="programs__text">
+        Институт повышения квалификации КазНУ предлагает гибкие и доступные программы для всех уровней образования.
+    </p>
+
+    <ul class="programs__list">
+        <li class="programs__item">
+            📘 Для школ и колледжей — <strong>от 25 000 ₸</strong>
+        </li>
+        <li class="programs__item">
+            🎓 Для преподавателей вузов — <strong>от 72 000 ₸</strong>
+        </li>
+    </ul>
+
+    <p class="programs__footer">Инвестиции в образование — инвестиции в уверенное будущее!</p>
+
+{{-- 🇬🇧 ENGLISH --}}
+@else
+    <h1 class="programs__title">COURSE FEES AND PROGRAM INFORMATION</h1>
+
+    <p class="programs__text">
+        The Institute of Al-Farabi KazNU offers flexible programs for schools, colleges, and universities.
+    </p>
+
+    <ul class="programs__list">
+        <li class="programs__item">
+            📘 For schools and colleges – <strong>from 25,000 KZT</strong>
+        </li>
+        <li class="programs__item">
+            🎓 For university lecturers – <strong>from 72,000 KZT</strong>
+        </li>
+    </ul>
+
+    <p class="programs__footer">Education is the best investment in your future!</p>
+@endif
+
+</div>
+
+
+
+
+    
+
 <section class="advantages">
     <h2 class="advantages__title">
         <span class="advantages__title-part">{{ __('Frequently Asked') }}</span>
