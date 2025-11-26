@@ -12,7 +12,7 @@ class SetLocale
 {
     public function handle(Request $request, Closure $next): Response
     {
-        $locale = $request->route('locale') ?? 'ru';
+        $locale = $request->route('locale') ?? 'kk';
 
         if (!in_array($locale, ['ru', 'kk', 'en'])) {
             $locale = 'ru';
