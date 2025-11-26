@@ -428,23 +428,12 @@
 </p>
         <div class="brands__list">
             <div class="brands__item">
-                <img class="brands__item-img" src="https://optim.tildacdn.pro/tild3130-3162-4434-b365-303932363139/-/resize/728x/-/format/webp/image-removebg-previ.png.webp" alt="BUSINESS GRADUATES ASSOCIATION">
+                <img class="brands__item-img" src="{{ asset('frontend/assets/images/logo-1.png') }}" alt="BUSINESS GRADUATES ASSOCIATION">
             </div>
             <div class="brands__item">
-                <img class="brands__item-img" src="https://optim.tildacdn.pro/tild6164-6332-4063-b461-333536333831/-/resize/572x/-/format/webp/image-removebg-previ.png.webp" alt="Coursera">
+                <img class="brands__item-img" src="{{ asset('frontend/assets/images/logo-2.png') }}" alt="Coursera">
             </div>
-            <div class="brands__item">
-                <img class="brands__item-img" src="https://optim.tildacdn.pro/tild3130-3162-4434-b365-303932363139/-/resize/728x/-/format/webp/image-removebg-previ.png.webp" alt="Trust Me">
-            </div>
-            <div class="brands__item">
-                <img class="brands__item-img" src="https://optim.tildacdn.pro/tild3130-3162-4434-b365-303932363139/-/resize/728x/-/format/webp/image-removebg-previ.png.webp" alt="INTERTEACH">
-            </div>
-            <div class="brands__item">
-                <img class="brands__item-img" src="https://optim.tildacdn.pro/tild3130-3162-4434-b365-303932363139/-/resize/728x/-/format/webp/image-removebg-previ.png.webp" alt="ACQUIN">
-            </div>
-            <div class="brands__item">
-                <img class="brands__item-img" src="https://optim.tildacdn.pro/tild3130-3162-4434-b365-303932363139/-/resize/728x/-/format/webp/image-removebg-previ.png.webp" alt="HR CAPITAL">
-            </div>
+           
         </div>
     </section>
 
