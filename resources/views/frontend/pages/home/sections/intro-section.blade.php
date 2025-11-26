@@ -580,11 +580,11 @@
     @if(app()->getLocale() === 'kk')
         <h1 class="programs-v2__grid">БАҒДАРЛАМАЛАР МЕН БАҒА ТУРАЛЫ АҚПАРАТ</h1>
         <p class="programs-v2__card">
-            Әл-Фараби атындағы ҚазҰУ-дың Біліктілікті арттыру және қосымша білім беру институты<br>
-            барлық деңгейдегі білім беру мекемелеріне арналған икемді және қолжетімді бағдарламалар ұсынады.
-            Біз әрбір тыңдаушыға сапалы білім мен заманауи тәжірибе арқылы кәсіби өсуге мүмкіндік береміз.
-            Мектеп пен колледж қызметкерлеріне арналған курстар – бар болғаны 25 000 теңгеден басталады.
-            ЖОО оқытушылары мен мамандарына арналған бағдарламалар – 72 000 теңгеден жоғары.
+            <h3 class="programs-v2__card-title">Әл-Фараби атындағы ҚазҰУ-дың Біліктілікті арттыру және қосымша білім беру институты<br></h3>
+            <h3 class="programs-v2__card-title">барлық деңгейдегі білім беру мекемелеріне арналған икемді және қолжетімді бағдарламалар ұсынады.</h3>
+            <h3 class="programs-v2__card-title">Біз әрбір тыңдаушыға сапалы білім мен заманауи тәжірибе арқылы кәсіби өсуге мүмкіндік береміз. </h3>
+            <div class="programs-v2__price">Мектеп пен колледж қызметкерлеріне арналған курстар – бар болғаны 25 000 теңгеден басталады. </div>
+            <div class="programs-v2__price">ЖОО оқытушылары мен мамандарына арналған бағдарламалар – 72 000 теңгеден жоғары. </div>
             Бұл бағаларға тәжірибелі профессорлардан сабақ алу, онлайн және офлайн форматтағы икемді оқу жүйесі, сонымен қатар мемлекеттік үлгідегі сертификат кіреді.
             Білімге салынған инвестиция – болашаққа салынған ең сенімді капитал!
         </p>
@@ -594,19 +594,19 @@
             Институт повышения квалификации и переподготовки кадров<br>
             КазНУ имени аль-Фараби предлагает гибкие программы для всех уровней образования.
             Мы создаем возможности для профессионального роста, сочетая академические знания и практические навыки.
-            Для школ и колледжей — курсы от 25 000 тенге.
-            Для преподавателей и специалистов вузов — программы от 72 000 тенге.
+            <div class="programs-v2__price">Для школ и колледжей — курсы от 25 000 тенге. </div>
+            <div class="programs-v2__price">Для преподавателей и специалистов вузов — программы от 72 000 тенге.</div>
             В стоимость входит обучение у опытных преподавателей КазНУ, удобные онлайн и офлайн форматы, а также сертификат государственного образца.
             Инвестиции в образование — это инвестиции в уверенное будущее!
         </p>
     @else
         <h1 class="programs-v2__grid">PROGRAMS & TUITION FEES</h1>
         <p class="programs-v2__card">
-            The Institute for Professional Development and Continuing Education<br>
-            at Al-Farabi Kazakh National University offers flexible programs for all educational levels.
+        <h3 class="programs-v2__card-title">The Institute for Professional Development and Continuing Education<br> </h3>
+        <h3 class="programs-v2__card-title">at Al-Farabi Kazakh National University offers flexible programs for all educational levels.</h3>
             We create opportunities for professional growth, combining academic knowledge and practical skills.
-            For schools and colleges — courses from 25,000 KZT.
-            For university lecturers and professionals — programs from 72,000 KZT.
+            <div class="programs-v2__price">For schools and colleges — courses from 25,000 KZT. </div>
+            <div class="programs-v2__price">For university lecturers and professionals — programs from 72,000 KZT. </div>
             The cost includes instruction from qualified KazNU professors, flexible online/offline formats, and an official state-recognized certificate upon completion.
             Education is the best investment in your future!
         </p>
