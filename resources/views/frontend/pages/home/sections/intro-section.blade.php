@@ -350,6 +350,41 @@
     </section>
 
 
+    <section class="form">
+        <div class="form__container">
+            <div class="form__form-wrapper">
+                <h3 class="form__title">Оставьте заявку и получите бесплатную консультацию</h3>
+                <form class="form__form" action="">
+                    <input class="form__input" type="text" placeholder="Ваше имя">
+                    <input class="form__input" type="tel" placeholder="Ваш телефон">
+                    <input class="form__input" type="email" placeholder="Ваш e-mail">
+                    <button class="form__button form__button--submit" type="submit">Получить консультацию</button>
+                </form>
+                <p class="form__disclaimer">
+
+                </p>
+
+            </div>
+            <div class="form__installment">
+                <h1 class="form__installment-title">
+                    {{__('The Institute for Advanced Training and Continuing Education of Al-Farabi KazNU offers flexible and affordable programs for schools, colleges, and universities. Our mission is to support professional growth through quality education and practical experience.')}}
+                </h1>
+                <div class="form__installment-duration">
+                    <span class="form__installment-months">{{__('For schools and colleges – courses start from')}}</span>
+                    <span class="form__installment-details">
+
+                    </span>
+                </div>
+                <div class="form__installment-price">
+
+                    <span class="form__installment-price-amount"> 25,000 .</span>
+                    <span class="form__installment-price-currency">KZT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 <section class="advantages">
     <h2 class="advantages__title">
         <span class="advantages__title-part">{{ __('Frequently Asked') }}</span>
