@@ -165,7 +165,156 @@
   .intro-logos { gap: 16px; }
 }
 
-    </style>
+.programs {
+    max-width: 680px;
+    margin: 80px auto;
+    padding: 56px 48px;
+    background: #ffffff;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.04), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.9s ease-out forwards;
+}
+
+.programs__title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    color: #111827;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.programs__title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background: #111827;
+    border-radius: 2px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.programs:hover .programs__title::after {
+    width: 120px;
+}
+
+.programs__text {
+    font-size: 17px;
+    margin: 0 0 32px 0;
+    color: #4b5563;
+}
+
+.programs__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.programs__item {
+    font-size: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #f3f4f6;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.programs__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 0;
+    background: #111827;
+    transition: height 0.4s ease;
+    transform: translateY(-50%);
+}
+
+.programs__item:hover {
+    padding-left: 12px;
+    color: #111827;
+}
+
+.programs__item:hover::before {
+    height: 100%;
+}
+
+.programs__item strong {
+    color: #111827;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.programs__item:hover strong {
+    transform: translateX(4px);
+}
+
+.programs__footer {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #374151;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out 0.6s forwards;
+}
+
+/* Анимации появления */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Адаптив */
+@media (max-width: 640px) {
+    .programs {
+        margin: 40px 20px;
+        padding: 40px 24px;
+        border-radius: 16px;
+    }
+    
+    .programs__title {
+        font-size: 24px;
+    }
+    
+    .programs__item {
+        font-size: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .programs__item strong {
+        margin-left: 0;
+    }
+}
+
+
+
+</style>
     <div class="container text-center">
         <div class="d-flex justify-content-center align-items-center gap-5 mb-4 wow fadeInUp intro-logos">
 
