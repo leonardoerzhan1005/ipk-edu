@@ -1553,7 +1553,7 @@ body {
 </script>
 <script>
 const programs = document.querySelector('.programs-v2');
-const maxOffset = 50000; // пиксели смещения
+const maxOffset = 1000; // пиксели смещения
 
 window.addEventListener('scroll', () => {
   const rect = programs.getBoundingClientRect();
