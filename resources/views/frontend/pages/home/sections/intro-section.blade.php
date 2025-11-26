@@ -448,49 +448,6 @@
 
 
 
-    <section class="contacts">
-        <div class="contacts__container">
-            <div class="contacts__left">
-                <h2 class="contacts__title" style="color:#E5BB67">Байланыстар</h2>
-
-                <div class="contacts__block">
-                    <p class="contacts__subtitle">Мекен-жай:</p>
-                    <p class="contacts__text">Алматы қаласы, Алматы, просп. Аль-Фараби, 71/16  Технопарк КазНУ им. Аль-Фараби</p>
-                </div>
-
-                <div class="contacts__block">
-                    <p class="contacts__subtitle" style="color:#D9D9D9">Қабылдау комиссиясының телефоны:</p>
-
-                    <a class="contacts__phone" style="color:#D9D9D9" href="#"> 1462 - 3237</a>
-                    <a class="contacts__subtitle"  style="color:#D9D9D9" href="#">
-                        Время работы ПН - СУББ С 9:00 - 17:00<br>
-                         СУББ С 9:00-13:00</a>
-
-
-                </div>
-
-                <div class="contacts__block">
-                    <p class="contacts__subtitle">Біздің әлеуметтік желілерге кіріңіз</p>
-                    <div class="contacts__socials">
-                        <a href="#" aria-label="YouTube" class="contacts__social contacts__social--yt"></a>
-                        <a href="#" aria-label="Facebook" class="contacts__social contacts__social--fb"></a>
-                        <a href="#" aria-label="Instagram" class="contacts__social contacts__social--ig"></a>
-                        <a href="#" aria-label="Telegram" class="contacts__social contacts__social--tg"></a>
-                    </div>
-                </div>
-
-                <a class="contacts__email"  href="mailto:business.school@kaznu.edu.kz">ipk.kaznu@gmail.com</a>
-
-
-            </div>
-
-            <div class="contacts__map">
-                <div class="contacts__map-inner">
-                    <iframe class="contacts__map-frame" src="https://yandex.kz/map-widget/v1/?ll=76.919239%2C43.222941&z=16&pt=76.919239,43.222941,pm2rdm" frameborder="0"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 <style>
