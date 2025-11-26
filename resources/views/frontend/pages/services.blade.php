@@ -27,12 +27,13 @@
                 @foreach(($services ?? []) as $service)
                 <div class="service-card">
                     <div class="service-header">
+                      {{--
                         @if($service->image)
                         <div class="mb-2">
                             <img src="{{ asset($service->image) }}" alt="service" style="max-height:80px">
                         </div>
                         @endif
-                        
+                        --}}
                         <h3>{{ $service->translated_title }}</h3>
                         @if($service->translated_subtitle)
                         <p>{{ $service->translated_subtitle }}</p>
