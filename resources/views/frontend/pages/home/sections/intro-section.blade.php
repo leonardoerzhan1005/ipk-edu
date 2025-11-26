@@ -439,7 +439,7 @@
         </div>
         </div>
         <div class="brands__content">
-            <h3 class="brands__title">Listeners from Kazakhstan University</h3>
+            <h3 class="brands__title">International universities and foreign partners</h3>
             <div class="brands__item">
                 <img class="brands__item-img" src="{{ asset('frontend/assets/images/logo-2.png') }}" alt="Coursera">
             </div>
