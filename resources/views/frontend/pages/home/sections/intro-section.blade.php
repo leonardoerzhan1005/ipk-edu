@@ -170,7 +170,10 @@
     source: auto;
     orientation: block;
 }
-
+@scroll-timeline slide-horizontal {
+    source: auto;
+    orientation: block;
+}
 
 
 .programs-v2 {
@@ -188,19 +191,13 @@
     /* opacity: 0; */
     /* transform: translateY(40px); */
     /* animation: reveal 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
-    animation-name: slideX;
-    animation-duration: auto;
-    animation-timing-function: linear;
-    animation-timeline: slide-horizontal;
-    animation-fill-mode: both;
+    transition: transform 0.4s ease;
 }
 
-
-@keyframes slideX {
-    0%   { transform: translateX(0); }
-    50%  { transform: translateX(-40px); }
-    100% { transform: translateX(0); }
+.programs-v2:hover {
+    transform: translateX(-40px);
 }
+ 
 
 .programs-v2::before {
     content: '';
