@@ -306,6 +306,126 @@
     }
 }
 
+
+
+.programs-v2 {
+    max-width: 920px;
+    margin: 120px auto;
+    padding: 96px 80px;
+    background: #ffffff;
+    border: 1.8px solid #e2e8f0;
+    border-radius: 32px;
+    box-shadow: 0 40px 80px -16px rgba(15, 23, 42, 0.09);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: reveal 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.programs-v2::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    width: 100px;
+    height: 5px;
+    background: #0f172a;
+    transform: translateX(-50%);
+    border-radius: 0 0 4px 4px;
+}
+
+.programs-v2__title {
+    font-size: 44px;
+    font-weight: 850;
+    letter-spacing: -1.6px;
+    color: #0f172a;
+    margin: 0 0 48px 0;
+    line-height: 1.1;
+}
+
+.programs-v2__lead {
+    font-size: 20px;
+    line-height: 1.75;
+    color: #475569;
+    margin: 0 0 56px 0;
+    font-weight: 400;
+}
+
+.programs-v2__price {
+    font-size: 28px;
+    font-weight: 500;
+    color: #1e293b;
+    margin: 28px 0;
+    padding: 8px 0;
+    position: relative;
+}
+
+.programs-v2__price strong {
+    font-size: 42px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -1px;
+}
+
+.programs-v2__price::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 60px;
+    height: 2px;
+    background: #cbd5e1;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.programs-v2:hover .programs-v2__price::before {
+    opacity: 1;
+}
+
+.programs-v2__includes {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #64748b;
+    margin: 48px 0 40px 0;
+    padding: 0 40px;
+}
+
+.programs-v2__footer {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    font-style: italic;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.8s forwards;
+}
+
+/* Анимации */
+@keyframes reveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .programs-v2 {
+        margin: 80px 20px;
+        padding: 64px 32px;
+        border-radius: 28px;
+    }
+    .programs-v2__title { font-size: 36px; }
+    .programs-v2__lead { font-size: 18px; }
+    .programs-v2__price { font-size: 24px; }
+    .programs-v2__price strong { font-size: 36px; }
+    .programs-v2__footer { font-size: 21px; }
+}
+
 </style>
 
 
@@ -577,7 +697,74 @@
     @endif
 </div>
 
+<div class="programs-v2">
+    @if(app()->getLocale() === 'kk')
+        <h1 class="programs-v2__title">БАҒДАРЛАМАЛАР МЕН БАҒА ТУРАЛЫ АҚПАРАТ</h1>
+        <div class="programs-v2__content">
+            <p class="programs-v2__lead">
+                Әл-Фараби атындағы ҚазҰУ-дың Біліктілікті арттыру және қосымша білім беру институты<br>
+                барлық деңгейдегі білім беру мекемелеріне арналған икемді және қолжетімді бағдарламалар ұсынады.<br>
+                Біз әрбір тыңдаушыға сапалы білім мен заманауи тәжірибе арқылы кәсіби өсуге мүмкіндік береміз.
+            </p>
 
+            <div class="programs-v2__price">Мектеп пен колледж қызметкерлеріне арналған курстар — <strong>25 000 ₸</strong>-дан басталады</div>
+            <div class="programs-v2__price">ЖОО оқытушылары мен мамандарына арналған бағдарламалар — <strong>72 000 ₸</strong>-дан жоғары</div>
+
+            <p class="programs-v2__includes">
+                Бұл бағаларға тәжірибелі профессорлардан сабақ алу, онлайн және офлайн форматтағы икемді оқу жүйесі,<br>
+                сонымен қатар мемлекеттік үлгідегі сертификат кіреді.
+            </p>
+
+            <p class="programs-v2__footer">
+                Білімге салынған инвестиция — болашаққа салынған ең сенімді капитал!
+            </p>
+        </div>
+
+    @elseif(app()->getLocale() === 'ru')
+        <h1 class="programs-v2__title">ИНФОРМАЦИЯ О ПРОГРАММАХ И СТОИМОСТИ</h1>
+        <div class="programs-v2__content">
+            <p class="programs-v2__lead">
+                Институт повышения квалификации и дополнительного образования КазНУ имени аль-Фараби<br>
+                предлагает гибкие и доступные программы для всех уровней образования.<br>
+                Мы создаем возможности для профессионального роста, сочетая академические знания и практические навыки.
+            </p>
+
+            <div class="programs-v2__price">Для школ и колледжей — курсы <strong>от 25 000 ₸</strong></div>
+            <div class="programs-v2__price">Для преподавателей и специалистов вузов — программы <strong>от 72 000 ₸</strong></div>
+
+            <p class="programs-v2__includes">
+                В стоимость входит обучение у опытных преподавателей КазНУ, удобные онлайн и офлайн форматы,<br>
+                а также сертификат государственного образца.
+            </p>
+
+            <p class="programs-v2__footer">
+                Инвестиции в образование — это инвестиции в уверенное будущее!
+            </p>
+        </div>
+
+    @else
+        <h1 class="programs-v2__title">COURSE FEES AND PROGRAM INFORMATION</h1>
+        <div class="programs-v2__content">
+            <p class="programs-v2__lead">
+                The Institute for Advanced Training and Continuing Education<br>
+                at Al-Farabi Kazakh National University offers flexible and affordable programs<br>
+                for schools, colleges, and universities.
+            </p>
+
+            <div class="programs-v2__price">For schools and colleges — courses <strong>from 25,000 KZT</strong></div>
+            <div class="programs-v2__price">For university lecturers and professionals — programs <strong>from 72,000 KZT</strong></div>
+
+            <p class="programs-v2__includes">
+                All programs include instruction from qualified KazNU professors,<br>
+                flexible online/offline formats, and an official state-recognized certificate.
+            </p>
+
+            <p class="programs-v2__footer">
+                Education is the best investment in your future!
+            </p>
+        </div>
+    @endif
+</div>
 
 
     
