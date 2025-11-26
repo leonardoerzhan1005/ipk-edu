@@ -185,12 +185,13 @@
     /* text-align: center; */
     position: relative;
     overflow: hidden;
-    opacity: 0;
+    /* opacity: 0; */
     /* transform: translateY(40px); */
     /* animation: reveal 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
     animation: slideX 1 linear both;
     animation-timeline: slide-horizontal;
 }
+
 
 @keyframes slideX {
     0%   { transform: translateX(0); }
@@ -208,6 +209,7 @@
     transform: translateX(-50%);
     border-radius: 0 0 4px 4px;
 }
+
 
 .programs-v2__title {
     font-size: 44px;
